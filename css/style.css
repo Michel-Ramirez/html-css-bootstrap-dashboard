@@ -2,30 +2,15 @@
 
 .navbar {
     border: 1px dashed red;
-    height: 80px;
 }
 
-.wrapper {
-    height: calc(100vh - 80px);
-}
 
 .sidebar {
     border: 1px dashed red;
-    width: 80px;
-    height: 100%;
 }
 
 .nav-main {
     background-color: aqua;
-    height: 150px;
-    width: 100%;
-}
-
-/* GENERICS */
-
-main{
-    overflow: auto;
-    flex-grow: 1;
 }
 
 section {
@@ -46,4 +31,54 @@ section {
 
 #stats {
     height:400px ;
+}
+
+
+
+/* LAYOUT */
+
+.sidebar {
+    width: 80px;
+    height: 100%;
+
+}
+
+.nav-main {
+    height: 150px;
+    width: 100%;
+}
+
+.navbar{
+    height: 80px;
+}
+
+.wrapper {
+    height: calc(100vh - 80px);
+}
+
+
+/* GENERICS */
+
+main{
+    overflow: auto;
+    flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUARY */
+
+@media screen and (min-width: 992px) {
+
+    .sidebar {
+        width: 130px;
+    }
+    
 }

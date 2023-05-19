@@ -24,14 +24,27 @@
     </header>
     <div class="wrapper d-flex">
         <!-- SIDEBAR -->
-        <div class="sidebar">
+        <div class="sidebar d-flex flex-column justify-content-between py-4">
             <nav>
-                <ul class="list-group-item">
-                    <li>HOME</li>
-                    <li>STATUS</li>
-                    <li>SIGNALS</li>
+                <ul class="list-group-item text-center">
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <span class="d-none d-lg-inline">Home</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-chart-simple"></i>
+                       <span class="d-none d-lg-inline">STATUS</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-signal"></i>
+                        <span class="d-none d-lg-inline">SIGNALS</span>
+                    </li>
                 </ul>
             </nav>
+            <div class="admin text-center">
+                <i class="fa-solid fa-gear"></i>
+                <span class="d-none d-lg-inline">Admin</span>
+            </div>
         </div>
      
         <main>
@@ -44,23 +57,19 @@
                 </div>
             </nav>
             <!-- MAIN CONTENT -->
+
+            <!-- TRASFORMARE GLI ID IN CLASS="CARD" -->
             <div class="main-content">
                 <div class="container flex-lg-row">
                     <div class="row">
                         <div class="col-lg-8">
                             <section id="next-classes">CLASSI</section>
-                        </div>
-                        <div class="col-lg-8">
                             <section id="faq">FAQ</section>
                         </div>
-                    <div class="row flex-column">
                         <div class="col-lg-4">
                             <section id="todo">TODO</section>
-                        </div>
-                        <div class="col-lg-4">
                             <section id="stats">STATS</section>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
