@@ -1,0 +1,49 @@
+/* TODO DEBUG SECTION */
+
+.navbar {
+    border: 1px dashed red;
+    height: 80px;
+}
+
+.wrapper {
+    height: calc(100vh - 80px);
+}
+
+.sidebar {
+    border: 1px dashed red;
+    width: 80px;
+    height: 100%;
+}
+
+.nav-main {
+    background-color: aqua;
+    height: 150px;
+    width: 100%;
+}
+
+/* GENERICS */
+
+main{
+    overflow: auto;
+    flex-grow: 1;
+}
+
+section {
+    border: 2px dashed green;
+}
+
+#next-classes {
+    height: 400px;
+}
+
+#faq {
+    height: 400px;
+}
+
+#todo {
+    height: 200px;
+}
+
+#stats {
+    height:400px ;
+}
