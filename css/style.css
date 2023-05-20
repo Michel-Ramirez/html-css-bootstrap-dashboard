@@ -1,41 +1,9 @@
-/* TODO DEBUG SECTION */
-
-.navbar {
-    border: 1px dashed red;
-}
-
-
-.sidebar {
-    border: 1px dashed red;
-}
-
-.nav-main {
-    background-color: aqua;
-}
-
-section {
-    border: 2px dashed green;
-}
-
-#next-classes {
-    height: 400px;
-}
-
-#faq {
-    height: 400px;
-}
-
-#todo {
-    height: 200px;
-}
-
-#stats {
-    height:400px ;
-}
-
-
 
 /* LAYOUT */
+
+.nav-main {
+    background-color: #1B72E8;
+}
 
 .sidebar {
     width: 80px;
@@ -43,10 +11,10 @@ section {
 
 }
 
-.nav-main {
+/* .nav-main {
     height: 150px;
     width: 100%;
-}
+} */
 
 .navbar{
     height: 80px;
@@ -56,7 +24,6 @@ section {
     height: calc(100vh - 80px);
 }
 
-
 /* GENERICS */
 
 main{
@@ -64,14 +31,35 @@ main{
     flex-grow: 1;
 }
 
+.table th {
+    font-weight: 400;
+}
 
+/* SIDEBAR */
 
+.sidebar {
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051E34;
+    color:white
+}
 
+.sidebar li {
+    padding-bottom: 20px;
+}
 
+.navbar img:first-child {
+    height: 50px
+}
 
+/* TABLE CLASSIS */
 
-
-
+.fa-code {
+    background-color: #F26551;
+    padding: 7px 5px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 5px;
+}
 
 /* MEDIA QUARY */
 
