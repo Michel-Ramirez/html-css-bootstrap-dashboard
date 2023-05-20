@@ -1,5 +1,5 @@
 
-/* LAYOUT */
+/*********** LAYOUT *****************/
 
 .nav-main {
     background-color: #1B72E8;
@@ -18,7 +18,7 @@
     height: calc(100vh - 80px);
 }
 
-/* GENERICS */
+/****************** GENERICS *********************/
 
 main{
     overflow: auto;
@@ -29,14 +29,26 @@ main{
     font-weight: 400;
 }
 
-/* UTILITY  */
+.fa-bell {
+    color: #FFC107;
+}
+
+.fa-question {
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+}
+
+
+/******************  UTILITY *********************/
 
 .bg-dk-blue {
     background-color: #165BBA;
 }
 
 
-/* SIDEBAR */
+/********************* SIDEBAR *************************/
 
 .sidebar {
     background-image: url(../img/sidebar-bg.png);
@@ -49,23 +61,31 @@ main{
     list-style-type: none;
 }
 
-.navbar img:first-child {
-    height: 50px;
-}
-
 .sidebar a {
     text-decoration: none;
     color: white;
     display: block;
 }
 
-/* NAVBAR */
+/************* NAVBAR / SERCH BAR ACTIONS MENU **************/
+
+.navbar img:first-child {
+    height: 50px;
+}
+
+.navbar .btn:active {
+    border-color: white;
+}
+
+
+/********************  NAVBAR IN MAIN CONTENT ***************/
 
 .nav-main .btn.bg-dk-blue {
     border-radius: 50%;
 }
 
-/* TABLE CLASSIS */
+
+/***************     TABLE CLASSIS    ***************/
 
 .fa-code {
     background-color: #F26551;
@@ -75,18 +95,30 @@ main{
     margin-right: 5px;
 }
 
-/* FAQ */
 
-.list-group-item a {
-    text-decoration: none;
+/******************        FAQ    ******************/
+
+.faq .fa-angle-up {
+    position: absolute;
+    right: 5px;
+    top: 10px;
 }
 
-/* MEDIA QUARY */
+.faq .list-group-item:active .fa-angle-up{
+    display: none;
+    
+}
+
+.navbar .row{
+    width: 100%;
+}
+
+/************************ MEDIA QUARY ***************************/
 
 @media screen and (min-width: 992px) {
 
     .wrapper .sidebar {
-        width: 150px;
+        width: 200px;
     }
     
 }
