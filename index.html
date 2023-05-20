@@ -32,7 +32,7 @@
     </header>
     <div class="wrapper d-flex">
         <!-- SIDEBAR -->
-        <div class="sidebar d-flex flex-column justify-content-between py-4">
+        <div class="sidebar d-flex flex-column justify-content-between py-5 px-3">
             <nav>
                 <ul class="list-group-item text-center">
                     <li>
@@ -60,25 +60,25 @@
             <nav class="nav-main text-white py-3">
                 <div class="container-fluid">
                     <div class="row flex-column flex-md-row-reverse justify-content-between">
-                        <div class="col text-lg-end">
+                        <div class="col text-lg-end mb-3">
                             <span>Nuovo Studente</span>
-                            <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button> 
+                            <button type="button" class="btn btn-outline-light mx-2"><i class="fa-solid fa-plus"></i></button> 
                         </div>
                         <div class="col d-flex flex-column order-1">
                             <div>
                                 <h1 class="d-inline">Boolean</h1>
-                                <span class="badge rounded-pill text-bg-primary">Piano blaze</span>
+                                <span class="badge bg-dk-blue">Piano blaze</span>
                             </div>
                             <div>
-                                <span class="badge rounded-pill text-bg-primary">3 app</span>
+                                <span class="badge bg-dk-blue">3 app</span>
                                 <i class="fa-solid fa-angles-right"></i>
-                                <button type="button" class="btn d-lg-none"><i class="fa-solid fa-plus text-white"></i></button>
-                                <span class="badge rounded-pill text-bg-primary d-none d-lg-inline">Boolean mobile app</span>
-                                <span class="badge rounded-pill text-bg-primary d-none d-lg-inline">Boolean mobile app</span>
-                                <span class="badge rounded-pill text-bg-primary d-none d-lg-inline">Boolean mobile app</span>
+                                <button type="button" class="btn d-lg-none bg-dk-blue"><i class="fa-solid fa-plus text-white"></i></button>
+                                <span class="badge bg-dk-blue d-none d-lg-inline">Boolean mobile app</span>
+                                <span class="badge bg-dk-blue d-none d-lg-inline">Boolean mobile app</span>
+                                <span class="badge bg-dk-blue d-none d-lg-inline">Boolean mobile app</span>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col mb-3">
                             <div>Studenti online negli ultimi 30 minuti</div>
                             <div class="utenti-online">125</div>
                         </div>
@@ -86,12 +86,11 @@
                 </div>
             </nav>
             <!-- MAIN CONTENT -->
-
-            <!-- TRASFORMARE GLI ID IN CLASS="CARD" -->
             <div class="main-content">
                 <div class="container-fluid flex-lg-row">
                     <div class="row">
                         <div class="col-lg-8">
+                            <!-- FIRST CLASS TABLE -->
                             <div class="card my-4">
                                 <h5 class="card-header">Prossime classi</h5>
                                 <div class="card-body">
@@ -190,16 +189,33 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="card">
+                            <!-- FAQ QUESTIONS -->
+                            <!-- <div class="card">
                                 <h5 class="card-header">F.A.Q.</h5>
-                                <div class="card-body">
-                                  <h5 class="card-title">Special title treatment</h5>
-                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card-body">                                   
+                                    <div class="container-fluid">
+                                        <div class="list-group" id="list-tab" role="tablist">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a class="list-group-item-action" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Come aggiungere un nuovo studente?</a>
+                                                    <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Home</div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a class="list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+                                                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a class="list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+                                                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                                                </li>                                  
+                                            </ul>
+                                        </div>
+                                    </div>                                  
                                 </div>
-                              </div>
+                            </div> -->
                         </div>
                         <div class="col-lg-4 py-4">
+                            <!-- TO DO CARD -->
                             <div class="card">
                                 <h5 class="card-header">Todo</h5>
                                 <div class="card-body">
@@ -219,12 +235,20 @@
                                       </ul>
                                 </div>
                             </div>
-                            <div class="card d-block mt-4" style="width: 18rem;">
-                                <img src="img/stats.jpeg" class="card-img-top" alt="...">
+                            <!-- STATS CARD -->
+                            <div class="card">
+                                <img src="img/stats.jpeg" class="card-img-top" alt="img-stats">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  <h5 class="card-title">Utenti attivi</h5>
+                                  <p class="card-text fw-semibold">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                </div>
+                                <ul class="list-group list-group-flush fw-semibold">
+                                  <li class="list-group-item">Gennaio: 1200</li>
+                                  <li class="list-group-item">Febbraio: 800</li>
+                                  <li class="list-group-item">Marzo: 1500</li>
+                                </ul>
+                                <div class="card-body">
+                                  <a href="#" class="card-link fw-semibold">Visualizza report appofondito</a>
                                 </div>
                             </div>
                         </div>
