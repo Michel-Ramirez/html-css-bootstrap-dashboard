@@ -14,18 +14,27 @@
         <!-- NAVBAR -->
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand">
+                <a class="navbar-brand" href="#">
                     <img src="img/mobile-logo.png" alt="Logo-Mobile" class="d-block d-sm-block d-md-block d-lg-none">
                     <img src="img/logo.svg" alt="Logo-large" class="d-none d-lg-block">
                 </a>
-                <form class="d-flex" role="search">
+                <form role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
-                <nav>
+                <nav class="d-flex">
                     <button class="btn" type="button"><i class="fa-solid fa-list-ul d-none d-lg-block"></i></button>
                     <button class="btn" type="button"><i class="fa-solid fa-question d-none d-lg-block"></i></button>
                     <button class="btn" type="button"><i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i></button>
-                    <button class="btn" type="button"><i class="fa-solid fa-bell"></i></button>
+                    <div class="dropdown">
+                        <button class="btn" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazone</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </nav>
@@ -68,7 +77,79 @@
                     <div class="row flex-column flex-md-row-reverse justify-content-between">
                         <div class="col-md-4 col-lg-3 mb-3">
                             <span>Nuovo Studente</span>
-                            <button type="button" class="btn btn-outline-light mx-2"><i class="fa-solid fa-plus"></i></button> 
+                            <!-- BTN ADD NEW STUDENT -->
+                            <button class="btn btn-outline-light mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                            <!-- CANVAS SLIDE RIGHT WHITH FORM TU ADD STUDENT -->
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"          aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title text-black" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body text-black">
+                                  <div class="row">
+                                    <div class="col">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6 mb-3">
+                                                    <label for="fname" class="form-label">Nome</label>
+                                                    <input type="text" class="form-control" id="fname" aria-describedby="fname">
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 mb-3">
+                                                    <label for="lname" class="form-label">Cognome</label>
+                                                    <input type="text" class="form-control" id="lname">
+                                                </div>
+                                                <div  class="col-sm-12 col-md-6 mb-3">
+                                                    <label for="email" class="form-label">Email</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                                        <input type="text" class="form-control" aria-label="email" aria-describedby="basic-addon1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 mb-3">
+                                                    <label for="InputPassword" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="InputPassword1">
+                                                </div>
+                                                <div class="col-12 mb-3">
+                                                    <label for="address" class="form-label">Indirizzo</label>
+                                                    <input type="text" class="form-control" id="addressInput">
+                                                </div>
+
+                                                <div class="col-sm-12 col-md-6 mb-3">
+                                                    <label for="city" class="form-label">Città</label>
+                                                    <input type="text" class="form-control" id="city" aria-describedby="fname">
+                                                </div>
+                                                <div class="col-sm-12 col-md-3 mb-3">
+                                                    <label for="country" class="form-label">Stato</label>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Scegli stato...</option>
+                                                        <option value="1">Italia</option>
+                                                        <option value="2">Francia</option>
+                                                        <option value="3">Germania</option>
+                                                        <option value="3">Spagna</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-12 col-md-3 mb-3">
+                                                    <label for="zipcode" class="form-label">CAP</label>
+                                                    <input type="text" class="form-control" id="zipcode">
+                                                </div>
+                                                <div class="col-12 mb-3">
+                                                    <label for="zipcode" class="form-label">Foto</label>
+                                                    <div class="input-group">
+                                                        <input type="file" class="form-control" id="up-profile-phot">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                              <input type="checkbox" class="form-check-input" id="check">
+                                              <label class="form-check-label" for="check">Seleziona per proseguire</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-4 col-lg-6 d-flex flex-column order-md-1 pb-3">
                             <div>
@@ -196,26 +277,52 @@
                                 </div>
                             </div>
                             <!-- FAQ QUESTIONS -->
-                            <div class="faq card">
+                            <div class="faq card mb-5">
                                 <h5 class="card-header">F.A.Q.</h5>
                                 <div class="card-body">                                   
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item position-relative">A first item
-                                            <i class="fa-solid fa-angle-down d-none"></i>
+                                        <li class="list-group-item position-relative">
                                             <i class="fa-solid fa-angle-up"></i>
+                                            <p>
+                                                <!-- LINK QUESTION FAQ -->
+                                                <a class="btn" data-bs-toggle="collapse" href="#collapse-addstudent" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    Come aggiungere un nuovo studente?
+                                                </a>
+                                            </p>
+                                            <!-- CARD COLLAPSE WITH ANSWER -->
+                                            <div class="collapse" id="collapse-addstudent">
+                                                <div class="card card-body">
+                                                    Clicca sil + in alto nella sezione blu.
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li class="list-group-item">A second item
+                                        <li class="list-group-item">
                                             <i class="fa-solid fa-angle-up"></i>
+                                            <p>
+                                                <a class="btn" data-bs-toggle="collapse" href="#collaps-info-account" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="collaps-info-account">
+                                                <div class="card card-body">
+                                                    Clicca sull'icola della campanella
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li class="list-group-item">A third item
+                                        <li class="list-group-item">
                                             <i class="fa-solid fa-angle-up"></i>
-                                            
+                                            <p>
+                                                <a class="btn" data-bs-toggle="collapse" href="#collapse-login-mobile" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                    Come posso posso usare questa dashboard da mobile?
+                                                </a>
+                                            </p>
+                                            <div class="collapse" id="collapse-login-mobile">
+                                                <div class="card card-body">
+                                                    Accede alla pagina direttamente da telefono.
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li class="list-group-item">A fourth item
-                                            <i class="fa-solid fa-angle-up"></i>
-                                           
-                                        </li>
-                                      </ul>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

@@ -41,6 +41,7 @@ main{
 }
 
 
+
 /******************  UTILITY *********************/
 
 .bg-dk-blue {
@@ -65,6 +66,11 @@ main{
     text-decoration: none;
     color: white;
     display: block;
+    padding: 10px;
+}
+
+.sidebar a:hover {
+    background-color: gray;
 }
 
 /************* NAVBAR / SERCH BAR ACTIONS MENU **************/
@@ -77,6 +83,11 @@ main{
     border-color: white;
 }
 
+.navbar .dropdown-menu[data-bs-popper] {
+    right: 10px;
+    top: 100%;
+    left: auto;
+}
 
 /********************  NAVBAR IN MAIN CONTENT ***************/
 
@@ -84,6 +95,9 @@ main{
     border-radius: 50%;
 }
 
+.nav-main .offcanvas.offcanvas-end {
+    width: 800px;
+}
 
 /***************     TABLE CLASSIS    ***************/
 
@@ -95,7 +109,6 @@ main{
     margin-right: 5px;
 }
 
-
 /******************        FAQ    ******************/
 
 .faq .fa-angle-up {
@@ -105,12 +118,19 @@ main{
 }
 
 .faq .list-group-item:active .fa-angle-up{
-    display: none;
-    
+    display: none; 
 }
 
 .navbar .row{
     width: 100%;
+}
+
+.faq .collapse .card-body {
+    border: none;
+}
+
+.faq .btn:active {
+    border: none;
 }
 
 /************************ MEDIA QUARY ***************************/
