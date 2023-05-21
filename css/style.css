@@ -1,4 +1,3 @@
-
 /*********** LAYOUT *****************/
 
 .nav-main {
@@ -80,7 +79,7 @@ main{
 }
 
 .navbar .btn:active {
-    border-color: white;
+    border-color: none;
 }
 
 .navbar .dropdown-menu[data-bs-popper] {
@@ -125,11 +124,11 @@ main{
     width: 100%;
 }
 
-.faq .collapse .card-body {
+.faq ul .card {
     border: none;
 }
 
-.faq .btn:active {
+.faq .btn {
     border: none;
 }
 
