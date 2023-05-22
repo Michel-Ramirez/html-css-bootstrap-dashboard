@@ -10,32 +10,34 @@
     <title>Bootstrap Freelancer</title>
 </head>
 <body>
-    <header>
+    <header class="page-header container-fluid bg-body-tertiary">
         <!-- NAVBAR -->
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
+        <nav class="row h-100 align-items-center justify-content-between">
+            <div class="col">
                 <a class="navbar-brand" href="#">
-                    <img src="img/mobile-logo.png" alt="Logo-Mobile" class="d-block d-sm-block d-md-block d-lg-none">
-                    <img src="img/logo.svg" alt="Logo-large" class="d-none d-lg-block">
+                    <img src="img/mobile-logo.png" alt="Logo-Mobile" class="img-fluid d-block d-sm-block d-md-block d-lg-none">
+                    <img src="img/logo.svg" alt="Logo-large" class="img-fluid d-none d-lg-block">
                 </a>
+            </div>
+            <div class="col-8">
                 <form role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 </form>
-                <nav class="d-flex">
-                    <button class="btn" type="button"><i class="fa-solid fa-list-ul d-none d-lg-block"></i></button>
-                    <button class="btn" type="button"><i class="fa-solid fa-question d-none d-lg-block"></i></button>
-                    <button class="btn" type="button"><i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i></button>
-                    <div class="dropdown">
-                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-bell"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Profilo</a></li>
-                            <li><a class="dropdown-item" href="#">Fatturazone</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                    </div>
-                </nav>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button class="btn d-none d-lg-block" type="button"><i class="fa-solid fa-list-ul "></i></button>
+                <button class="btn d-none d-lg-block" type="button"><i class="fa-solid fa-question "></i></button>
+                <button class="btn d-none d-lg-block" type="button"><i class="fa-solid fa-ellipsis-vertical "></i></button>
+                <div class="dropdown">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazone</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -45,27 +47,27 @@
             <nav>
                 <ul class="list-group-item text-center">
                     <li>
-                        <a href="#">
-                            <i class="fa-solid fa-house pe-1"></i>
+                        <a href="#" class="p-1">
+                            <i class="fa-solid fa-house"></i>
                             <span class="d-none d-lg-inline">Home</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fa-solid fa-chart-simple pe-1"></i>
+                        <a href="#" class="p-1">
+                            <i class="fa-solid fa-chart-simple"></i>
                             <span class="d-none d-lg-inline">Status</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fa-solid fa-signal pe-1"></i>
+                        <a href="#" class="p-1">
+                            <i class="fa-solid fa-signal"></i>
                             <span class="d-none d-lg-inline">Signal</span>
                         </a>
                     </li>
                 </ul>
             </nav>
-            <a href="#" class="text-center">
-                <i class="fa-solid fa-gear pe-1"></i>
+            <a href="#" class="text-center p-1">
+                <i class="fa-solid fa-gear"></i>
                 <span class="d-none d-lg-inline">Admin</span>
             </a>
         </div>
@@ -283,49 +285,39 @@
                             <div class="faq card mb-5">
                                 <h5 class="card-header">F.A.Q.</h5>
                                 <div class="card-body">                                   
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item position-relative">
-                                            <i class="fa-solid fa-angle-up"></i>
-                                            <p>
-                                                <!-- LINK QUESTION FAQ -->
-                                                <a class="btn" data-bs-toggle="collapse" href="#collapse-addstudent" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                                    Come aggiungere un nuovo studente?
-                                                </a>
-                                            </p>
-                                            <!-- CARD COLLAPSE WITH ANSWER -->
-                                            <div class="collapse" id="collapse-addstudent">
-                                                <div class="card card-body">
-                                                    Clicca sil + in alto nella sezione blu.
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <i class="fa-solid fa-angle-up"></i>
-                                            <p>
-                                                <a class="btn" data-bs-toggle="collapse" href="#collaps-info-account" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                                    Come posso accedere alle informazioni del mio account?
-                                                </a>
-                                            </p>
-                                            <div class="collapse" id="collaps-info-account">
-                                                <div class="card card-body">
-                                                    Clicca sull'icola della campanella
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <i class="fa-solid fa-angle-up"></i>
-                                            <p>
-                                                <a class="btn" data-bs-toggle="collapse" href="#collapse-login-mobile" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                                    Come posso posso usare questa dashboard da mobile?
-                                                </a>
-                                            </p>
-                                            <div class="collapse" id="collapse-login-mobile">
-                                                <div class="card card-body">
-                                                    Accede alla pagina direttamente da telefono.
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <!-- ACCORDION COMPONENT -->
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                              Come aggiungere un nuovo studente?
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Cliccca sul + in alto nella sezione blu.</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                              Come posso accedere alle informazioni del mio account?
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Clicca sull'icona della campanella in alto a destra</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                              Posso usare questa dashboard da mobile?
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Accede alla dashboard da mobile, essa è completamente responsive.</div>
+                                          </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

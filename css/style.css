@@ -9,12 +9,12 @@
     height: 100%;
 }
 
-.navbar{
-    height: 80px;
+header{
+    height: 74px;
 }
 
 .wrapper {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 74px);
 }
 
 /****************** GENERICS *********************/
@@ -45,6 +45,22 @@ main{
     background-color: #165BBA;
 }
 
+/************* NAVBAR / SERCH BAR ACTIONS MENU **************/
+
+.page-header img:first-child {
+    height: 50px;
+}
+
+.page-header .btn:active {
+    border: none;
+}
+
+.page-header .dropdown-menu[data-bs-popper] {
+    right: 10px;
+    top: 100%;
+    left: auto;
+}
+
 
 /********************* SIDEBAR *************************/
 
@@ -62,29 +78,12 @@ main{
 .sidebar a {
     text-decoration: none;
     color: white;
-    display: inline-block;
-    padding: 10px 20px;
 }
 
 .sidebar a:hover {
     background-color: gray;
 }
 
-/************* NAVBAR / SERCH BAR ACTIONS MENU **************/
-
-.navbar img:first-child {
-    height: 50px;
-}
-
-.navbar .btn:active {
-    border-color: none;
-}
-
-.navbar .dropdown-menu[data-bs-popper] {
-    right: 10px;
-    top: 100%;
-    left: auto;
-}
 
 /********************  NAVBAR IN MAIN CONTENT ***************/
 
@@ -122,9 +121,6 @@ main{
     display: none; 
 }
 
-.navbar .row{
-    width: 100%;
-}
 
 .faq ul .card {
     border: none;
