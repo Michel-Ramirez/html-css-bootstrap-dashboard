@@ -106,6 +106,9 @@ main{
     margin-right: 5px;
 }
 
+.main-content table th:first-child{
+    width: 50%;
+}
 
 /******************        FAQ    ******************/
 
