@@ -51,8 +51,8 @@ main{
     height: 50px;
 }
 
-.page-header .btn:active {
-    border: none;
+.page-header .btn {
+    border: 0;
 }
 
 .page-header .dropdown-menu[data-bs-popper] {
