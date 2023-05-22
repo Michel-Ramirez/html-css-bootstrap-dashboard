@@ -24,9 +24,6 @@ main{
     flex-grow: 1;
 }
 
-.table th {
-    font-weight: 400;
-}
 
 .fa-bell {
     color: #FFC107;
@@ -97,6 +94,10 @@ main{
 
 /***************     TABLE CLASSIS    ***************/
 
+.table th {
+    font-weight: 400;
+}
+
 .fa-code {
     background-color: #F26551;
     padding: 7px 5px;
@@ -105,9 +106,6 @@ main{
     margin-right: 5px;
 }
 
-/* .main-content .table th {
-    min-width: 100px;
-} */
 
 /******************        FAQ    ******************/
 
